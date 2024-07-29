@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp"
+    android:backgroundTint="@color/ivory1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img"
+            android:text="name"
+            android:textColor="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="35dp"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/qt1"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:text="-"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="43dp"
+            android:backgroundTint="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="38dp"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/qt2"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:text="+"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white">
+
+        </Button>
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="38dp"
+                android:backgroundTint="@color/ivory1"
+                android:id="@+id/delete"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/delete_foreground">
+
+            </ImageButton>
+        </LinearLayout>
+i
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
